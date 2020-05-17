@@ -13,7 +13,7 @@
       window.onload = function() {
     Particles.init({
       selector: '.background',
-      color: '#d0cff7',
+      color: '#FFFAFA',
       maxParticles: 160,
       connectParticles: true,
       responsive: [
@@ -37,9 +37,9 @@
     <header>
      <nav>
          <a href="#">Home</a>
-         <a class="vl" href="#">About us</a>
-         <a class="vl" href="#">Contact</a>
-         <a class="vl" href="#">Skills</a>
+         <a class="vl" href="#about">About</a>
+         <a class="vl" href="#skills">Skills</a>
+         <a class="vl" href="#contactUs">Contact</a>
      </nav>    
     </header>
     <section class="title-container">
@@ -47,25 +47,52 @@
        <h1>App Development</h1>
        <p> We create websites and applications for businesses</p>
         <br>
-        <button class="button">Contact Us</button>
+        <a href ="#skills" class="button" id = "linkMore">Learn more</button>
         <a href ="#about" class="arrow animated bounce"></a>
     </section>
     <section class="about" id="about">
         <h2>About Us</h2>
-         <br>
-         <p>Some text here</p>
+        <img src="assets/DesignerDeveloper.png">
+        <div id="aboutText">
+          <p>We are a small team of developers : a FileMaker database developer, 
+            a full-stack web developer, and UI/UX specialist. 
+            We studied at 42 Silicon Valley and decided to combine our strenghts 
+            in order to create something beatiful. This is how App  Development was born. 
+            The team is located in San Francisco, California. </p>
      </section>
      <section class="skills" id="skills">
       <h2>Our Skills</h2>
-      <div class='card'>Card 1</div>
-      <div class='card'>Card 2</div>
-      <div class='card'>Card 3</div>
-      <div class='card'>Card 4</div>
-      <div class='card'>Card 5</div>
-      <div class='card'>Card 6</div>
+      <div id = "gallery">
+        <div class='card'>
+          <img src="https://img.icons8.com/officel/80/000000/database.png"/>
+          <h3>FileMaker Databases</h3>
+            <p>We create, upgrade, and deplay custom FileMaker solutions.</p>
+        </div>
+        <div class='card'>
+          <h3>Website Design</h3>
+          <p>We build robust web applications and design beautiful, responsive websites.</p>
+        </div>
+        <div class='card'>
+          <h3>Web Development</h3>
+            <p>Full-stack web development using PHP or MERN stack.</p>
+        </div>
+        <div class='card'>
+          <h3>Wordpress Development</h3>
+          <p>We can enhance your Wordpress website or build a new one from scratch.</p>
+        </div>
+        <div class='card'>
+          <h3>API Integrations</h3>
+          <p>Integrate. Automate workflows. Connect your apps.</p>
+        </div>
+        <div class='card'>
+          <h3> Data Visualizations</h3>
+          <p>Tableau, JS charts and dashboards.</p>
+        </div>
+      </div>
    </section>
 <section class="contactUs" id="contactUs">
-    <button class='button'><a href="#openModal">Click here</a></button>
+    <h2> Any questions? Contact us today! </h2>
+    <button class='button'><a href="#openModal">Contact Us</a></button>
     <div id="openModal" class="modalDialog">
     <div>	<a href="#close" title="Close" class="close">X</a>
       <div class="form">  
@@ -98,7 +125,7 @@
  <header>
   <nav>
       <a href="#">Home</a>
-      <a class="vl" href="#">About us</a>
+      <a class="vl" href="#">About</a>
       <a class="vl" href="#">Contact</a>
       <a class="vl" href="#">Skills</a>
   </nav>    
