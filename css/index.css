@@ -223,9 +223,6 @@ nav {
   align-items: center;
   align-content: center;
 }
-nav :first-child {
-  font-weight: bold;
-}
 .vl {
   border-left: 1px solid grey;
   padding-left: 2%;
@@ -504,7 +501,10 @@ nav {
   align-items: center;
   align-content: center;
 }
-nav :first-child {
+#head :first-child {
+  font-weight: bold;
+}
+#footer :last-child {
   font-weight: bold;
 }
 .vl {
@@ -515,7 +515,7 @@ a {
   margin-left: 1% ;
 }
 #linkMore {
-  bottom: 7%;
+  bottom: 10%;
 }
 .background {
   z-index: -1;
@@ -557,10 +557,11 @@ h2 {
 }
 .card {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 15px;
-  width: 30%;
-  height: 150px;
+  padding: 10%;
+  width: 25%;
   border-radius: 8px;
   padding: 40px 80px 40px 80px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
@@ -583,6 +584,10 @@ h2 {
 .card p {
   margin: 3%;
 }
+.card .content {
+  display: flex;
+  flex-direction: column;
+}
 #contactUs {
   display: flex;
   flex-direction: column;
@@ -595,4 +600,8 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+}
+#openWindow {
+  margin: 10% 0;
 }

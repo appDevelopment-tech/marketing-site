@@ -35,7 +35,7 @@
 </head>
 <body>
     <header>
-     <nav>
+     <nav id = "head">
          <a href="#">Home</a>
          <a class="vl" href="#about">About</a>
          <a class="vl" href="#skills">Skills</a>
@@ -64,9 +64,11 @@
       <h2>Our Skills</h2>
       <div id = "gallery">
         <div class='card'>
-          <img src="https://img.icons8.com/officel/80/000000/database.png"/>
-          <h3>FileMaker Databases</h3>
+          <!-- <img src="https://img.icons8.com/officel/80/000000/database.png"/> -->
+          <div class = "content">
+            <h3>FileMaker Databases</h3>
             <p>We create, upgrade, and deplay custom FileMaker solutions.</p>
+          </div>
         </div>
         <div class='card'>
           <h3>Website Design</h3>
@@ -92,10 +94,10 @@
    </section>
 <section class="contactUs" id="contactUs">
     <h2> Any questions? Contact us today! </h2>
-    <button class='button'><a href="#openModal">Contact Us</a></button>
+    <button class='button' id="openWindow"><a href="#openModal">Contact Us</a></button>
     <div id="openModal" class="modalDialog">
     <div>	<a href="#close" title="Close" class="close">X</a>
-      <div class="form">  
+      <!-- <div class="form">  
         <form id="contact" action="" method="post">
           <h3>Quick Contact</h3>
           <h4>Contact us today, and get reply with in 24 hours!</h4>
@@ -118,16 +120,20 @@
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
           </fieldset>
         </form>
-      </div>
+      </div> -->
+      
+
+
+
     </div>
 </div>
  </section>
  <header>
-  <nav>
+  <nav id = "footer">
       <a href="#">Home</a>
       <a class="vl" href="#">About</a>
-      <a class="vl" href="#">Contact</a>
       <a class="vl" href="#">Skills</a>
+      <a class="vl" href="#">Contact</a>
   </nav>    
 </header>
 <footer class='footer'><p>Copyright 2020</p></footer>
