@@ -188,6 +188,7 @@ html,
 body {
   font-family: 'Muli', sans-serif;
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
 }
 .background {
@@ -222,6 +223,7 @@ nav {
   justify-content: center;
   align-items: center;
   align-content: center;
+  width: 100%;
 }
 .vl {
   border-left: 1px solid grey;
@@ -252,6 +254,11 @@ a {
   color: #525f7f;
   padding-bottom: 4%;
   font-size: 2.8rem;
+}
+@media (max-width: 500px) {
+  .title-container h1 {
+    font-size: 1.6rem;
+  }
 }
 .arrow {
   position: absolute;
@@ -487,7 +494,21 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
+}
+nav a {
+  font-size: 1.5rem;
+  margin-left: 1% ;
+  padding-right: 3%;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: space-evenly;
+  }
 }
 #head :first-child {
   font-weight: bold;
@@ -499,17 +520,27 @@ nav {
   border-left: 2px solid grey;
   padding-left: 2%;
 }
-a {
-  margin-left: 1% ;
+.footer p {
+  font-size: 0.8rem;
 }
 #linkMore {
   bottom: 10%;
 }
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: bottom;
+}
 .background {
   z-index: -1;
   background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   opacity: 40%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 h2 {
   font-size: 1.4rem;
@@ -518,6 +549,11 @@ h2 {
   color: #6772e5;
   text-transform: uppercase;
   line-height: 32px;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1rem;
+  }
 }
 #about {
   display: flex;
@@ -576,6 +612,14 @@ h2 {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .card {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+}
 #contactUs {
   display: flex;
   flex-direction: column;
@@ -589,6 +633,13 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  #gallery {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 #openWindow {
   margin: 10% 0;

@@ -6,7 +6,17 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    a {
+        font-size: 1.5rem;
+        margin-left: 1% ;
+        padding-right: 3%;
+        @media (max-width: 500px){
+            font-size: 1.2rem;
+        }
+    }
+    @media (max-width: 500px){
+       justify-content: space-evenly;
+    }
 }
 
 #head :first-child {
@@ -21,6 +31,9 @@ nav {
    border-left: 2px solid grey; 
    padding-left: 2%;
 }
-a{
-    margin-left: 1% ;
+
+.footer{
+    p{
+        font-size: 0.8rem;
+    }
 }

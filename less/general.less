@@ -95,6 +95,7 @@ html,
 body {
   font-family: 'Muli', sans-serif;
   margin: 0;
+  overflow-x:hidden;
   padding: 0;
 }
 .background {
@@ -129,6 +130,7 @@ nav {
   justify-content: center;
   align-items: center;
   align-content: center;
+  width: 100%;
 }
 .vl {
   border-left: 1px solid grey;
@@ -159,6 +161,9 @@ a {
   color: #525f7f;
   padding-bottom: 4%;
   font-size: 2.8rem;
+  @media (max-width: 500px){
+       font-size: 1.6rem;
+  }
 }
 .arrow {
   position: absolute;
