@@ -91,16 +91,26 @@
           <p>Tableau, JS charts and dashboards.</p>
         </div>
       </div>
-   </section>
+    </section>
+      
 <section class="contactUs" id="contactUs">
     <h2> Any questions? Contact us today! </h2>
     <button class='button' id="openWindow"><a href="#openModal">Contact Us</a></button>
     <div id="openModal" class="modalDialog">
-    <div>	<a href="#close" title="Close" class="close">X</a>
-      <!-- <div class="form">  
-        <form id="contact" action="" method="post">
-          <h3>Quick Contact</h3>
-          <h4>Contact us today, and get reply with in 24 hours!</h4>
+    <div>	<a href="#close" title="Close" class="close">x</a>
+      <div class="form">  
+        <form class="contact__form" method="post" action="mail.php" id="contact">
+          <!-- form message -->
+          <div class="row">
+            <div class="col-12">
+              <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                Your message was sent successfully.
+              </div>
+            </div>
+          </div>
+          <!-- end message -->
+
+          <h2>Contact Us</h2>
           <fieldset>
             <input placeholder="Your name" type="text" tabindex="1" required autofocus>
           </fieldset>
@@ -111,20 +121,13 @@
             <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
           </fieldset>
           <fieldset>
-            <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-          </fieldset>
-          <fieldset>
             <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
           </fieldset>
           <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <button name="submit" type="submit" class= "button" data-submit="...Sending">Submit</button>
           </fieldset>
         </form>
-      </div> -->
-      
-
-
-
+      </div>
     </div>
 </div>
  </section>
@@ -137,6 +140,30 @@
   </nav>    
 </header>
 <footer class='footer'><p>Copyright 2020</p></footer>
+<script>
+  var lang = {
+  "html": "100%",
+  "css": "90%",
+  "javascript": "70%",
+  "php": "55%",
+  "angular": "65%"
+};
 
+var multiply = 4;
+
+$.each( lang, function( language, pourcent) {
+
+  var delay = 700;
+  
+  setTimeout(function() {
+    $('#'+language+'-pourcent').html(pourcent);
+  },delay*multiply);
+  
+  multiply++;
+
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
